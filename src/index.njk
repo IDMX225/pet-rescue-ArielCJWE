@@ -10,8 +10,8 @@ layout: 'base.njk'
       <h1>Our friends in their time of need</h1>
       <p><br>Furrbabies are friends too!</p>
       <div class="flex-group">
-        <a href="#featured-articles" class="btn btn--primary">Featured Items</a>
-        <a href="./portfolio" class="btn btn--neutral">Link to Portfolio Page</a>
+        <a href="#featured-articles" class="btn btn--primary">Tips and tricks</a>
+        <a href="./portfolio" class="btn btn--neutral">Why?</a>
       </div>
     </div>
     <div>
@@ -25,24 +25,25 @@ layout: 'base.njk'
     <class="section-title text-center ">
     <ul role="list" class="articles__list flow">
     <h2>Pet Care Tips</h2>
-    <p>Bringing a new pet into your home is exciting, but it can also be a big adjustment for both you and your pet. 
-    <br>
-    <br>Here are some helpful tips to make the transition easier and ensure your pet feels comfortable and safe:
-    <br>
-    <br>- Create a Safe Space: Set up a quiet, comfortable area where your new pet can feel safe while they adjust to their new surroundings. This could be a cozy corner with a bed, blanket, and a few toys.
-    <br>
-    <br>- Feeding Schedule: Establish a consistent feeding schedule to help your pet feel secure and understand when to expect their meals. This is especially important for pets that may have experienced food insecurity in the past.
-    <br>
-    <br>- Veterinary Care: Schedule a vet appointment as soon as possible to get a full health check-up and any necessary vaccinations. Regular vet visits are essential to keeping your pet healthy.
-    <br>
-    <br>- Exercise and Play: Regular exercise and playtime are crucial for both dogs and cats. Dogs need daily walks, while cats enjoy interactive play with feather wands or laser pointers. Playtime helps burn off energy and provides mental stimulation.
-    <br>
-    <br>- Training and Socialization: Training your pet helps them understand boundaries and become well-behaved members of the family. Basic commands like sit, stay, and come are a great place to start. Additionally, socializing your pet with other animals and people will help them feel more confident in different situations.
-    <br>
-    <br>- Patience and Love: Remember that every pet is different, and adjusting to a new environment takes time. Be patient, give them lots of love, and provide positive reinforcement to help them feel at home.</p>
-
+    </div>
+    <p>
+      Bringing a new pet into your home is exciting, but it can also be a big adjustment for both you and your pet. 
+      <br><br>
+      Here are some helpful tips to make the transition easier and ensure your pet feels comfortable and safe:
+      <ul role="list" class="articles__list flow">
+        <li>Create a Safe Space: Set up a quiet, comfortable area where your new pet can feel safe while they adjust to their new surroundings. This could be a cozy corner with a bed, blanket, and a few toys.</li>
+        <li>Feeding Schedule: Establish a consistent feeding schedule to help your pet feel secure and understand when to expect their meals. This is especially important for pets that may have experienced food insecurity in the past.</li>
+        <li>Veterinary Care: Schedule a vet appointment as soon as possible to get a full health check-up and any necessary vaccinations. Regular vet visits are essential to keeping your pet healthy.</li>
+        <li>Exercise and Play: Regular exercise and playtime are crucial for both dogs and cats. Dogs need daily walks, while cats enjoy interactive play with feather wands or laser pointers. Playtime helps burn off energy and provides mental stimulation.</li>
+        <li>Training and Socialization: Training your pet helps them understand boundaries and become well-behaved members of the family. Basic commands like sit, stay, and come are a great place to start. Additionally, socializing your pet with other animals and people will help them feel more confident in different situations.</li>
+        <li>Patience and Love: Remember that every pet is different, and adjusting to a new environment takes time. Be patient, give them lots of love, and provide positive reinforcement to help them feel at home.</li>
+      </ul>
+    </p>
+    <ul role="list" class="articles__list">
       {%- for post in collections.featured | reverse -%}
-      {% include 'article-snippet.njk' %}
+      <li role="listitem">
+        {% include 'article-snippet.njk' %}
+      </li>
       {%- endfor -%}
     </ul>
   </div>
