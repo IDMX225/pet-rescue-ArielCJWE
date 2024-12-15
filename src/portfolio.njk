@@ -4,8 +4,16 @@ layout: 'base.njk'
 ---
 
 <div class="section container">
-  <h1 class="section-title">Consectetur Adipiscing Elit</h1>
+  <class="section-title">
   <ul role="list" class="articles__list flow">
+  <h2>The Need for Pet Rescue in the US.</h2>
+      <p><br>Pet rescues play an important role in reducing the number of homeless animals by providing them with medical care, shelter, and the opportunity to find forever homes. 
+      <br>They also work to educate communities about responsible pet ownership, spaying and neutering, and the importance of adopting rather than buying pets. 
+      <br>Rescue organizations are often volunteer-based and rely heavily on donations and community support to cover the costs of veterinary care, food, and other essentials.</p>
+      <p><br>There is also an increasing need to rescue animals from abuse, neglect, and abandonment. 
+      <br>The demand for rescue services is further compounded by natural disasters and economic hardships, which can lead to a surge in pet surrenders.</p>
+      <p><br>Supporting pet rescues through donations, volunteering, fostering, or adopting can make a significant difference in reducing the number of homeless animals and providing them with a better quality of life.</p>
+
     {%- for post in collections.post | reverse -%}
     {% include 'article-snippet.njk' %}
     {%- endfor -%}
